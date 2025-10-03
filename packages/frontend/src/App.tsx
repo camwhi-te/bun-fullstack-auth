@@ -13,7 +13,6 @@ function AnimatedPage({ children }: { children: React.ReactNode }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -15 }}
       transition={{ duration: 0.10 }}
-      className="flex items-center justify-center w-full h-full"
     >
       <div className="w-full max-w-md">{children}</div>
     </motion.div>
@@ -24,7 +23,7 @@ function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-green-600">
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { AuthLayout } from '../../layouts/AuthLayout';
 
 export function Login() {
   const [email, setEmail] = useState('');
@@ -26,7 +27,7 @@ export function Login() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full">
+    <AuthLayout>
       <h1 className="text-4xl font-bold text-gray-800 mb-2 text-center">
         Login
       </h1>
@@ -86,6 +87,6 @@ export function Login() {
           Don't have an account? Register
         </Link>
       </div>
-    </div>
+    </AuthLayout>
   );
 }
