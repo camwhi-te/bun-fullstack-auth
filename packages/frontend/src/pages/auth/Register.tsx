@@ -27,7 +27,6 @@ export function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full">
         <h1 className="text-4xl font-bold text-gray-800 mb-2 text-center">
           Register
@@ -88,7 +87,7 @@ export function Register() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition duration-200 disabled:opacity-50 mb-4"
+            className="w-full bg-gradient-to-r from-blue-500 to-green-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-green-700 transition duration-200 disabled:opacity-50 mb-4"
           >
             {loading ? 'Creating account...' : 'Register'}
           </button>
@@ -103,6 +102,5 @@ export function Register() {
           </Link>
         </div>
       </div>
-    </div>
   );
 }

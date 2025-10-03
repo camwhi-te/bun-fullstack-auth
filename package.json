@@ -10,5 +10,8 @@
     "build:backend": "bun run --filter backend build",
     "build:frontend": "bun run --filter frontend build",
     "build:shared": "bun run --filter shared build"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.22"
   }
 }

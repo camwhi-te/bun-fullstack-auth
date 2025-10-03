@@ -35,8 +35,5 @@ export interface ErrorResponse {
 // Protected route responses
 export interface HelloResponse {
   message: string;
-  user?: {
-    id: string;
-    email: string;
-  };
+  user?: User;
 }
