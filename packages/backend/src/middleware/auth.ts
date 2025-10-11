@@ -23,7 +23,7 @@ export const authMiddleware = (req: AuthRequest, res: Response, next: NextFuncti
       return res.status(401).json({ message: 'Invalid or expired token' });
     }
 
-    const decoded = jwt.verify(token, JWT_SECRET) as { id: string; email: string, name: string };
+    const decoded: User = jwt.verify(token, JWT_SECRET) as User;
     req.user = decoded;
     next();
   } catch (error) {

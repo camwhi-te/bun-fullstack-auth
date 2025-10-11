@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "feather-icons": "^4.29.2",
+    "feather-icons-react": "^0.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",

@@ -15,10 +15,3 @@ export const getMe = async (req: AuthRequest, res: Response<User | ErrorResponse
     res.status(500).json({ message: 'Server error' });
   }
 };
-
-export const getHello = async (req: AuthRequest, res: Response<HelloResponse>) => {
-  res.json({
-    message: `Hello ${req.user?.email}! This is a protected route.`,
-    user: req.user,
-  });
-};
